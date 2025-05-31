@@ -1,0 +1,3 @@
+name,capacity_mw,min_stable_level_mw,ramp_up_mw_per_hr,ramp_down_mw_per_hr,startup_cost_usd,shutdown_cost_usd,variable_om_cost_usd_per_mwh,fuel_cost_usd_per_mmbtu,heat_rate_mmbtu_per_mwh,investment_cost_usd_per_mw_year,zone_id
+Coal_Plant_A,500,150,100,100,5000,2000,5,2.5,10,120000,1
+Gas_Plant_B,250,50,300,300,1000,500,10,6,7,95000,2

@@ -1,0 +1,4 @@
+id,from_zone_id,to_zone_id,reactance_pu,thermal_limit_mw,length_km,investment_cost_usd_per_mw_year,initial_capacity_mw
+L1,1,2,0.05,1000,150,3000,500
+L2,2,3,0.04,800,120,2800,400
+L3,1,3,0.08,500,200,2500,0

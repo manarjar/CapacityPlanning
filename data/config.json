@@ -1,0 +1,20 @@
+{
+    "project_parameters": {
+        "num_stages": 2,
+        "years_per_stage": 5,
+        "discount_rate": 0.07
+    },
+    "stage_data_paths": [
+        "data/stage_1/",
+        "data/stage_2/"
+    ],
+    "global_data_paths": {
+        "zones": "data/common/zones.csv",
+        "transmission_lines": "data/common/transmission_lines.csv",
+        "thermal_plants": "data/common/thermal_plants.csv",
+        "renewable_plants_definitions": "data/common/renewable_plants_definitions.csv",
+        "must_run_plants": "data/common/must_run_plants.csv",
+        "storage_units": "data/common/storage_units.csv",
+        "initial_capacities": "data/common/initial_capacities.csv"
+    }
+}

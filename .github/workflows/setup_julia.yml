@@ -1,0 +1,31 @@
+name: Julia on Windows
+
+on:
+  push:
+    branches: [ feature/multistage-multizone-deterministic-model ]
+  pull_request:
+    branches: [ feature/multistage-multizone-deterministic-model ]
+
+jobs:
+  test:
+    runs-on: windows-latest  # This specifies Windows environment
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Julia
+      uses: julia-actions/setup-julia@v1
+      with:
+        version: '1.9'  # Specify Julia version you need
+    
+    - name: Install dependencies
+      run: |
+        julia --project=. -e "using Pkg; Pkg.instantiate()"
+    
+    - name: Run tests
+      run: |
+        julia --project=. -e "using Pkg; Pkg.test()"
+    
+    - name: Run your Julia script
+      run: |
+        julia your_script.jl

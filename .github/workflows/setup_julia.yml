@@ -28,4 +28,4 @@ jobs:
     
     - name: Run your Julia script
       run: |
-        julia your_script.jl
+        julia run_model.jl

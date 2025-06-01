@@ -20,12 +20,14 @@ jobs:
     
     - name: Install dependencies
       run: |
-          if (Test-Path "Manifest.toml") { Remove-Item "Manifest.toml" -Force }
           julia --project=. -e "
-            using Pkg;
-            Pkg.Registry.update();
-            sleep(2);
-            Pkg.instantiate()
+          using Pkg;
+          Pkg.add(\"ArgParse\");
+          Pkg.add(\"CSV\");
+          Pkg.add(\"DataFrames\");
+          Pkg.add(\"HiGHS\");
+          Pkg.add(\"JSON\");
+          Pkg.add(\"JuMP\");
           "
     
     - name: Run tests

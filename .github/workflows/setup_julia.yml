@@ -20,15 +20,15 @@ jobs:
     
     - name: Install dependencies
       run: |
-          julia --project=. -e "
+          julia --project=. -e '
           using Pkg;
-          Pkg.add(\"ArgParse\");
-          Pkg.add(\"CSV\");
-          Pkg.add(\"DataFrames\");
-          Pkg.add(\"HiGHS\");
-          Pkg.add(\"JSON\");
-          Pkg.add(\"JuMP\");
-          "
+          Pkg.add("ArgParse");
+          Pkg.add("CSV");
+          Pkg.add("DataFrames");
+          Pkg.add("HiGHS");
+          Pkg.add("JSON");
+          Pkg.add("JuMP");
+          '
     
     - name: Run tests
       run: |

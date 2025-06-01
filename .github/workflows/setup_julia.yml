@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: windows-latest  # This specifies Windows environment
+    runs-on: ubuntu-latest  # This specifies Windows environment
     
     steps:
     - uses: actions/checkout@v4

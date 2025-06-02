@@ -14,7 +14,6 @@
         "thermal_plants": "data/common/thermal_plants.csv",
         "renewable_plants_definitions": "data/common/renewable_plants_definitions.csv",
         "must_run_plants": "data/common/must_run_plants.csv",
-        "storage_units": "data/common/storage_units.csv",
-        "initial_capacities": "data/common/initial_capacities.csv"
+        "storage_units": "data/common/storage_units.csv"
     }
 }

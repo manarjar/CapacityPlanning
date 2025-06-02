@@ -1,3 +1,3 @@
-name,capacity_mw,variable_om_cost_usd_per_mwh,curtailment_cost_usd_per_mwh,investment_cost_usd_per_mw_year,zone_id
-Solar_Farm_X,1000,1,0,60000,1
-Wind_Farm_Y,1500,2,0,85000,3
+name,capacity_mw,variable_om_cost_usd_per_mwh,curtailment_cost_usd_per_mwh,investment_cost_usd_per_mw_year,zone_id,initial_capacity_mw
+Solar_Farm_X,1000,1,0,60000,1,50
+Wind_Farm_Y,1500,2,0,85000,3,100
